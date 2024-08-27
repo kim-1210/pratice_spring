@@ -10,6 +10,8 @@
 ### repository -> Member Management API
 #####   - MemberRepository : 회원에 관한 api
 #####   - MemoryMemberRepository : api의 기능 작성
+#####   - JDBCMemberRepository : h2 DB를 이용하여 member테이블을 생성 후 spring과 h2를 연결 및 기능 구현
+#####      (sql query를 그대로 이용)
 ### service 파일 -> MemberService : 가상DB 회원가입 및 조회 기능 제작
 ### Config.java -> Spring Container에 넣어주기 위한 Spring Bean작업 <java self>
 
