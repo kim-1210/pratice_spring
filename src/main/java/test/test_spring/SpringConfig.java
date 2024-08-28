@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import test.test_spring.repository.JDBCMemberRepository;
+import test.test_spring.repository.JDBCTemplateMemberRepository;
 import test.test_spring.repository.MemberRepository;
 import test.test_spring.repository.MemoryMemberRepositiry;
 import test.test_spring.service.MemberService;
@@ -28,6 +29,8 @@ public class SpringConfig {
     
     @Bean
     public MemberRepository memberRepository(){
-        return new JDBCMemberRepository(dataSource);
+        //return new MemoryMemberRepository();
+        //return new JDBCMemberRepository(dataSource);
+        return new JDBCTemplateMemberRepository(dataSource);
     }
 }
