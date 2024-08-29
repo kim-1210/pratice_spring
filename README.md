@@ -13,6 +13,9 @@
 #####   - JDBCMemberRepository : h2 DB를 이용하여 member테이블을 생성 후 spring과 h2를 연결 및 기능 구현
 #####   - JDBCTemplateMemberRepository : JDBC를 대신하는 JDBCTemplate를 이용한 MemberRepository 인터페이스 구현
 #####      (sql query를 그대로 이용)
+#####   - JPAMemberRepository : sql-query를 쓰지않고도 객체로 생각하여 sql기능 구현
+#####   - SpringDataJpaMemberRepository : Jpa에서 더 나아가 Interface로 작성하여 함수로 작성하는 방법
+
 ### service 파일 -> MemberService : 가상DB 회원가입 및 조회 기능 제작
 ### Config.java -> Spring Container에 넣어주기 위한 Spring Bean작업 <java self>
 

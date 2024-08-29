@@ -4,13 +4,12 @@ package test.test_spring.service;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import test.test_spring.domain.Member;
 import test.test_spring.repository.MemberRepository;
-import test.test_spring.repository.MemoryMemberRepositiry;
 
+@Transactional
 public class MemberService {
     private final MemberRepository memberRepository;
 
